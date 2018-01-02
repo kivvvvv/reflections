@@ -39,4 +39,5 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+        It is way easier to manage the project since every changes you make is within a separate branch, unless you
+    merge it with the master branch and it is easier to rollback when you mess things up.
