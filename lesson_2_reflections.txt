@@ -3,3 +3,31 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
     It offers some more control over files that need to be committed.
+
+git diff: compares Working directory and Staging area.
+git diff --staged: compares Staging area and commit1(which is recent commit).
+git diff commit1 commit2: compares commit1 and commit2
+
+git reset --hard: discards any changes in either the Working directory or the Staging area.
+
+git checkout master: go checkout master due to detaching head by checking out an old commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+    So we can explicitly group files into Staging area to write a commit message then commit it.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+    Good naming branch will help you understand what did you trying to accomplish.
+
+git log --graph --oneline master coins
+
+How do the diagrams help you visualize the branch structure?
+    It does help us at least know the structure of the project and related contents.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+    Combining two branches together 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+    Pros of automatic merging: Remove workload from coder.
+    Cons of automatic merging: Coding must be semantic.
+    Pros of merges manually: Not much.
+    Cons of merges manually: Time consuming
